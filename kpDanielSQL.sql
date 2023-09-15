@@ -150,14 +150,14 @@ INSERT INTO kpcars.car (id_model, id_colour, id_insurance, plate, purchase_date,
 	(10, 1, 10, '4445 FGH', '2024-07-07', 51000, 'T66778');
 
 SELECT 
-    model.model_name AS "Nombre del Modelo",
-    brand.brand_name AS "Nombre de la Marca",
-    car_group.group_name AS "Nombre del Grupo Empresarial",
+    model.model_name AS "Modelo",
+    brand.brand_name AS "Marca",
+    car_group.group_name AS "Grupo Empresarial",
     car.purchase_date AS "Fecha de Compra",
     car.plate AS "Matrícula",
-    colour.colour_name AS "Nombre del Color",
+    colour.colour_name AS "Color",
     car.total_km AS "Total de Kilómetros",
-    insurance_company.insurance_company AS "Nombre de la Empresa Aseguradora",
+    insurance_company.insurance_company AS "Compañía de Seguros",
     car.policy_number AS "Número de Póliza"
 FROM 
     kpcars.car

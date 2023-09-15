@@ -1,0 +1,2 @@
+# KPCars-SQL
+Basic exercise

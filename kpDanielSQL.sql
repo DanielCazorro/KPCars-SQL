@@ -1,8 +1,11 @@
 -- Creación del esquema: kpCars
 
+
 create schema if not exists kpcars;
 
+
 -- Creación de tablas
+
 
 -- Tabla Group
 create table kpcars.car_group (
@@ -60,13 +63,16 @@ create table kpcars.car_service (
 );
 
 
+-- Inserción de registros manuales
+
+
 -- Insertar registros en la tabla car_group
 INSERT INTO kpcars.car_group (group_name) VALUES
 	('Renault-Nissan-Mitsubishi Alliance'), 
     ('PSA Peugeot S.A.'), 
     ('Hyundai Motor Group'), 
-    ('Grupo Melón'), 
-    ('Grupo Uva');
+    ('General Motors'), 
+    ('BMW Group');
 
 -- Insertar registros en la tabla brand
 INSERT INTO kpcars.brand (brand_name, id_group) VALUES
@@ -83,15 +89,15 @@ INSERT INTO kpcars.brand (brand_name, id_group) VALUES
 
 -- Insertar registros en la tabla insurance_company
 INSERT INTO kpcars.insurance_company (insurance_company) VALUES
-	('Seguros Bolívar'), 
-    ('Seguros SURA'), 
+	('Línea Directa'), 
+    ('Mapfre'), 
     ('Seguros Falabella'), 
-    ('Rimac Seguros'),
+    ('Mutua Madrileña'),
 	('Pacifico Seguros'), 
-    ('La Positiva Seguros'), 
-    ('Seguros Bancomer'), 
+    ('Allianz'), 
+    ('Axa'), 
     ('Seguros Azteca'), 
-    ('Quálitas Compañía de Seguros'), 
+    ('Generali'), 
     ('Seguros Monterrey');
 
 -- Insertar registros en la tabla model
@@ -109,14 +115,14 @@ INSERT INTO kpcars.model (model_name, id_brand) VALUES
 
 -- Insertar registros en la tabla colour
 INSERT INTO kpcars.colour (colour_name) VALUES
-	('Coral'), 
+	('Azul'), 
     ('Turquesa'), 
     ('Esmeralda'), 
-    ('Bermellón'), 
-    ('Carbón'),
-	('Champán'), 
+    ('Rosa'), 
+    ('Negro'),
+	('Marrón'), 
     ('Bronce'), 
-    ('Cobalto'), 
+    ('Verde'), 
     ('Cromo'), 
     ('Lila');
 
